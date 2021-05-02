@@ -17,6 +17,16 @@
 </head>
 
 <body>
+     <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+          <button type="button" class="close-btn" data-modal-close>
+              <svg class="svg-modal">
+                    <use href="images/icon.svg#icon-close"></use>
+                </svg>
+            </button>
+      </div>
+      
+    </div>
     <header class="header">
         <div class="container">
             <nav class="header-nav">
@@ -47,7 +57,7 @@
         <section class="main-section">
             <div class="container">
                 <h1 class="main-text">Efektowne rozwiązania dla waszego biznesu</h1>
-                <input class="main-button-active" type="button" value="Zamów usługe" />
+                <input class="main-button-active"  type="button" value="Zamów usługe" data-modal-open />
             </div>
         </section>
     </main>
@@ -113,13 +123,16 @@
             <ul class="cont-work-list list">
                 <li class="cont-work-list-item">
                     <img class="cont-work-list-img" src="images/box/img1.jpg" alt="Office" width="370" height="294" />
+                    <p class="cont-work-list-item-label">Aplikacje Komputerowe</p>
                 </li>
                 <li class="cont-work-list-item">
                     <img class="cont-work-list-img" src="images/box/img.jpg" alt="Mobile technologies" width="370"
                         height="294" />
+                        <p class="cont-work-list-item-label">Aplikacje mobilne</p>
                 </li>
                 <li class="cont-work-list-item">
                     <img class="cont-work-list-img" src="images/box/img2.jpg" alt="Graphic" width="370" height="294" />
+                    <p class="cont-work-list-item-label">Rozwiązania Graficzne</p>
                 </li>
             </ul>
         </div>
@@ -287,6 +300,8 @@
             </div>
         </div>
     </footer>
+    <script src="/modal.js">
+    </script>
 </body>
 
 </html>
