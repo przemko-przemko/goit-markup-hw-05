@@ -831,7 +831,7 @@ border-radius: 50%;
     
 
 }
-.container-list-item:nth-child(1) .overlay {
+.container-list-item .overlay {
     position: absolute;
    width: 370px;
    height: 294px;
@@ -858,7 +858,7 @@ border-radius: 50%;
     text-align: center;
     
 }
-.container-list-item:nth-child(1):hover .overlay {
+.container-list-item:hover .overlay {
     transform: translateY(-294px);
     transition: cubic-bezier(0.4, 0, 0.2, 1) 100ms;
     visibility: visible;
